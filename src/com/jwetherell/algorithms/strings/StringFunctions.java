@@ -15,7 +15,7 @@ public class StringFunctions {
     public static final String reverseWithStringConcat(String string) {
         String output = new String();
         
-        if(string==null){
+        if(string==null || string.equals("")){
             return "";
         }
         
@@ -30,7 +30,7 @@ public class StringFunctions {
     public static final String reverseWithStringBuilder(String string) {
         final StringBuilder builder = new StringBuilder();
         
-        if(string==null){
+        if(string==null || string.equals("")){
             return "";
         }
 
